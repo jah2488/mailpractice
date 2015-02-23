@@ -47,7 +47,7 @@ end
 gem 'hirb'
 gem 'kaminari'
 gem 'puma'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production #Move to Production group only in template
 gem 'figaro'
 gem 'devise'
 group :test, :development do
@@ -62,3 +62,6 @@ end
 
 gem 'bootstrap-sass'
 gem 'simple_form'
+
+gem 'mandrill_dm'
+
